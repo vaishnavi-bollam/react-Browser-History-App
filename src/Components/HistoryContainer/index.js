@@ -51,18 +51,28 @@ class HistoryContainer extends Component {
           </ul>
         )
       }
-      return <p>No Items to show</p>
+      return <p>There is no history to show</p>
     }
 
     return (
       <div>
         <div className="top-container">
           <div>
-            <h1>HISTORY</h1>
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/history-website-logo-img.png"
+              alt="app logo"
+            />
           </div>
           <div>
-            <img src="https://assets.ccbp.in/frontend/react-js/search-img.png " />
-            <input placeholder="search history" onChange={this.onSearchInput} />
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/search-img.png "
+              alt="search"
+            />
+            <input
+              placeholder="search history"
+              onChange={this.onSearchInput}
+              type="search"
+            />
           </div>
         </div>
         <div>{itemsFilter()}</div>
